@@ -1,0 +1,24 @@
+---
+
+# (c) Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# rclone version.
+rclone_version: "v1.46"
+
+# URL for download rclone binary.
+rclone_download:
+  url: "https://github.com/ncw/rclone/releases/download/{{ rclone_version }}/rclone-{{ rclone_version }}-linux-amd64.zip"
+  dest: "/tmp/rclone-{{ rclone_version }}-linux-amd64.zip"
+  checksum: "sha1:f3998a79c4080d5e4e778199a9577624f728171b"
