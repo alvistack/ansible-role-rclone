@@ -14,10 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# rclone version.
-rclone_version: "v1.46"
-
 # URL for download rclone binary.
+rclone_version: "v1.46"
 rclone_download:
   url: "https://github.com/ncw/rclone/releases/download/{{ rclone_version }}/rclone-{{ rclone_version }}-linux-amd64.zip"
   dest: "/tmp/rclone-{{ rclone_version }}-linux-amd64.zip"
