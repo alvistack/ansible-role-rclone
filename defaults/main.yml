@@ -15,8 +15,8 @@
 # limitations under the License.
 
 # URL for download rclone binary.
-rclone_version: "v1.46"
+rclone_version: "v1.47.0"
 rclone_download:
   url: "https://github.com/ncw/rclone/releases/download/{{ rclone_version }}/rclone-{{ rclone_version }}-linux-amd64.zip"
   dest: "/tmp/rclone-{{ rclone_version }}-linux-amd64.zip"
-  checksum: "sha1:f3998a79c4080d5e4e778199a9577624f728171b"
+  checksum: "sha1:a471bb514132b37fe1719655b312dba506256f14"
