@@ -13,3 +13,17 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+_rclone_download:
+  v1.47.0:
+    url: "https://github.com/ncw/rclone/releases/download/v1.47.0/rclone-v1.47.0-linux-amd64.zip"
+    dest: "/tmp/rclone-v1.47.0-linux-amd64.zip"
+    checksum: "sha1:a471bb514132b37fe1719655b312dba506256f14"
+  v1.46.0:
+    url: "https://github.com/ncw/rclone/releases/download/v1.46/rclone-v1.46-linux-amd64.zip"
+    dest: "/tmp/rclone-v1.46-linux-amd64.zip"
+    checksum: "sha1:f3998a79c4080d5e4e778199a9577624f728171b"
+  v1.45.0:
+    url: "https://github.com/ncw/rclone/releases/download/v1.45/rclone-v1.45-linux-amd64.zip"
+    dest: "/tmp/rclone-v1.45-linux-amd64.zip"
+    checksum: "sha1:caa5247e91b7d50aeaeea8c84d49cf2270f8bcd0"
