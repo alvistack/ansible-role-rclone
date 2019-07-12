@@ -57,6 +57,7 @@
     state: "{{ item.state | default('directory') }}"
   loop:
     - { dest: "/usr/local/bin" }
+    - { dest: "{{ rclone_download.dest | dirname }}" }
   tags: rclone
 
 - name: copy templates
