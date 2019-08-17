@@ -78,8 +78,8 @@
     checksum: "{{ item.checksum }}"
   loop:
     - "{{ rclone_download }}"
-  register: result
-  until: result is succeeded
+  register: get_url_result
+  until: get_url_result is succeeded
   tags: rclone
 
 - name: unarchive package
@@ -90,7 +90,7 @@
     chown -Rf root:root rclone
   args:
     executable: "/bin/bash"
-    creates: "/usr/local/bin/rclone"
+  when: get_url_result is changed
   tags: rclone
 
 - name: prepare files
