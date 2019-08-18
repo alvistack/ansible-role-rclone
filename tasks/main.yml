@@ -60,17 +60,6 @@
     - { dest: "{{ rclone_download.dest | dirname }}" }
   tags: rclone
 
-- name: copy templates
-  template:
-    dest: "{{ item.dest }}"
-    src: "{{ item.src | default('./templates' + item.dest + '.j2') }}"
-    owner: "{{ item.owner | default('root') }}"
-    group: "{{ item.group | default('root') }}"
-    mode: "{{ item.mode | default('0644') }}"
-  loop:
-    - { dest: "/usr/local/bin/rclonefs", mode: "0755" }
-  tags: rclone
-
 - name: download archive
   get_url:
     url: "{{ item.url }}"
@@ -86,11 +75,22 @@
   shell: |
     set -o pipefail
     cd /usr/local/bin
-    unzip -j {{ rclone_download.dest }} rclone-{{ rclone_version }}-linux-amd64/rclone
+    TMP_DIR="`mktemp -d `" && unzip -qq -d $TMP_DIR {{ rclone_download.dest }} && mv $TMP_DIR/*/rclone . && rm -rf $TMP_DIR
     chown -Rf root:root rclone
   args:
     executable: "/bin/bash"
   when: get_url_result is changed
+  tags: rclone
+
+- name: copy templates
+  template:
+    dest: "{{ item.dest }}"
+    src: "{{ item.src | default('./templates' + item.dest + '.j2') }}"
+    owner: "{{ item.owner | default('root') }}"
+    group: "{{ item.group | default('root') }}"
+    mode: "{{ item.mode | default('0644') }}"
+  loop:
+    - { dest: "/usr/local/bin/rclonefs", mode: "0755" }
   tags: rclone
 
 - name: prepare files
