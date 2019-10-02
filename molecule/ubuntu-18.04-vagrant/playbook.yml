@@ -14,8 +14,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# rclone version.
-rclone_version: "v1.49.4"
+- hosts: all
+  remote_user: root
+  become: true
+  roles:
+    - role: rclone
 
-# rclone download details.
-rclone_download: "{{ _rclone_download[rclone_version] }}"
+- hosts: all
+  remote_user: root
+  become: true
+  tasks:
+    - name: rclone --version
+      command: rclone --version
+      register: result
+      changed_when: result is not succeeded
