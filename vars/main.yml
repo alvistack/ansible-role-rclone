@@ -15,6 +15,10 @@
 # limitations under the License.
 
 _rclone_download:
+  v1.50.0:
+    url: "https://github.com/ncw/rclone/releases/download/v1.50.0/rclone-v1.50.0-linux-amd64.zip"
+    dest: "/var/cache/ansible/rclone-v1.50.0-linux-amd64.zip"
+    checksum: "sha1:6d61231aa955c774596069886167472832711dde"
   v1.49.5:
     url: "https://github.com/ncw/rclone/releases/download/v1.49.5/rclone-v1.49.5-linux-amd64.zip"
     dest: "/var/cache/ansible/rclone-v1.49.5-linux-amd64.zip"
