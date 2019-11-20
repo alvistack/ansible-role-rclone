@@ -15,6 +15,10 @@
 # limitations under the License.
 
 _rclone_download:
+  v1.50.2:
+    url: "https://github.com/ncw/rclone/releases/download/v1.50.2/rclone-v1.50.2-linux-amd64.zip"
+    dest: "/var/cache/ansible/rclone-v1.50.2-linux-amd64.zip"
+    checksum: "sha1:9eb4d3c366394471000c7374fca9a23ebe10bb50"
   v1.50.1:
     url: "https://github.com/ncw/rclone/releases/download/v1.50.1/rclone-v1.50.1-linux-amd64.zip"
     dest: "/var/cache/ansible/rclone-v1.50.1-linux-amd64.zip"
@@ -47,19 +51,3 @@ _rclone_download:
     url: "https://github.com/ncw/rclone/releases/download/v1.49.0/rclone-v1.49.0-linux-amd64.zip"
     dest: "/var/cache/ansible/rclone-v1.49.0-linux-amd64.zip"
     checksum: "sha1:bc29148c2bca1916f7b531e7c77faead7483d066"
-  v1.48.0:
-    url: "https://github.com/ncw/rclone/releases/download/v1.48.0/rclone-v1.48.0-linux-amd64.zip"
-    dest: "/var/cache/ansible/rclone-v1.48.0-linux-amd64.zip"
-    checksum: "sha1:45a015f0ad03b9a8345687372b9053d3d10509c9"
-  v1.47.0:
-    url: "https://github.com/ncw/rclone/releases/download/v1.47.0/rclone-v1.47.0-linux-amd64.zip"
-    dest: "/var/cache/ansible/rclone-v1.47.0-linux-amd64.zip"
-    checksum: "sha1:a471bb514132b37fe1719655b312dba506256f14"
-  v1.46.0:
-    url: "https://github.com/ncw/rclone/releases/download/v1.46/rclone-v1.46-linux-amd64.zip"
-    dest: "/var/cache/ansible/rclone-v1.46-linux-amd64.zip"
-    checksum: "sha1:f3998a79c4080d5e4e778199a9577624f728171b"
-  v1.45.0:
-    url: "https://github.com/ncw/rclone/releases/download/v1.45/rclone-v1.45-linux-amd64.zip"
-    dest: "/var/cache/ansible/rclone-v1.45-linux-amd64.zip"
-    checksum: "sha1:caa5247e91b7d50aeaeea8c84d49cf2270f8bcd0"
