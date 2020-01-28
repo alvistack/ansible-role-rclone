@@ -79,6 +79,8 @@
     cd /usr/local/bin
     TMP_DIR="`mktemp -d `" \
       && unzip -qq -d $TMP_DIR {{ rclone_download.dest }} \
+      && chown root:root $TMP_DIR/*/rclone \
+      && chmod 0755 $TMP_DIR/*/rclone \
       && mv $TMP_DIR/*/rclone . \
       && rm -rf $TMP_DIR
   args:
@@ -86,7 +88,7 @@
   when: get_url_result is changed
   tags: rclone
 
-- name: install rclone bash completion
+- name: install bash completion
   environment:
     PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
   shell: |
