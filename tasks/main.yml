@@ -86,7 +86,7 @@
   when: get_url_result is changed
   tags: rclone
 
-- name: install rclone bash completion
+- name: install bash completion
   environment:
     PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
   shell: |
