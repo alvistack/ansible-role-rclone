@@ -93,11 +93,8 @@
 - name: install bash completion
   environment:
     PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-  shell: |
-    set -o pipefail
-    rclone genautocomplete bash
+  command: rclone genautocomplete bash
   args:
-    executable: "/bin/bash"
     creates: "/etc/bash_completion.d/rclone"
   register: result
   changed_when: result is not succeeded
