@@ -14,9 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- hosts: all
-  remote_user: root
-  become: true
-  roles:
-    - role: python
-    - role: rclone
+_apt:
+  - { state: "latest", name: "bash-completion" }
+  - { state: "latest", name: "unzip" }
