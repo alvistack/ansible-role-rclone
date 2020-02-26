@@ -17,17 +17,17 @@
 _rclone_download:
   v1.51.0:
     url: "https://github.com/ncw/rclone/releases/download/v1.51.0/rclone-v1.51.0-linux-amd64.zip"
-    dest: "/var/cache/ansible/rclone-v1.51.0-linux-amd64.zip"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/rclone-v1.51.0-linux-amd64.zip"
     checksum: "sha1:9ae7bf54d4ac79791a11849090dd280469bfec47"
   v1.50.2:
     url: "https://github.com/ncw/rclone/releases/download/v1.50.2/rclone-v1.50.2-linux-amd64.zip"
-    dest: "/var/cache/ansible/rclone-v1.50.2-linux-amd64.zip"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/rclone-v1.50.2-linux-amd64.zip"
     checksum: "sha1:9eb4d3c366394471000c7374fca9a23ebe10bb50"
   v1.50.1:
     url: "https://github.com/ncw/rclone/releases/download/v1.50.1/rclone-v1.50.1-linux-amd64.zip"
-    dest: "/var/cache/ansible/rclone-v1.50.1-linux-amd64.zip"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/rclone-v1.50.1-linux-amd64.zip"
     checksum: "sha1:1a827a42384db8543a83d849d45a64f8708c4eac"
   v1.50.0:
     url: "https://github.com/ncw/rclone/releases/download/v1.50.0/rclone-v1.50.0-linux-amd64.zip"
-    dest: "/var/cache/ansible/rclone-v1.50.0-linux-amd64.zip"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/rclone-v1.50.0-linux-amd64.zip"
     checksum: "sha1:6d61231aa955c774596069886167472832711dde"
