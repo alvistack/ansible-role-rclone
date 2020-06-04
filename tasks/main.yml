@@ -94,10 +94,8 @@
   environment:
     PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
   command: rclone genautocomplete bash
-  args:
-    creates: "/etc/bash_completion.d/rclone"
-  register: result
-  changed_when: result is not succeeded
+  changed_when: false
+  ignore_errors: true
   tags: rclone
 
 - name: copy templates
