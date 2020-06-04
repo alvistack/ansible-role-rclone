@@ -93,12 +93,9 @@
 - name: install bash completion
   environment:
     PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-  shell: |
-    set -o pipefail
-    rclone genautocomplete bash
-  args:
-    executable: "/bin/bash"
-  when: get_url_result is changed
+  command: rclone genautocomplete bash
+  changed_when: false
+  ignore_errors: true
   tags: rclone
 
 - name: copy templates
