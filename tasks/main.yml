@@ -16,7 +16,6 @@
 
 - name: include default variables
   include_vars: "../vars/main.yml"
-  tags: rclone
 
 - name: include release specific variables
   include_vars: "{{ lookup('first_found', _params) }}"
@@ -31,7 +30,6 @@
       paths:
         - "../vars"
   ignore_errors: true
-  tags: rclone
 
 - name: include release specific tasks
   include_tasks: "{{ lookup('first_found', _params) }}"
@@ -46,7 +44,6 @@
       paths:
         - "."
   ignore_errors: true
-  tags: rclone
 
 - name: prepare directories
   file:
@@ -59,7 +56,6 @@
     - { dest: "/etc/bash_completion.d" }
     - { dest: "/usr/local/bin" }
     - { dest: "{{ rclone_download.dest | dirname }}" }
-  tags: rclone
 
 - name: download archive
   vars:
@@ -74,7 +70,6 @@
     - "{{ rclone_download }}"
   register: get_url_result
   until: get_url_result is succeeded
-  tags: rclone
 
 - name: unarchive package
   shell: |
@@ -89,7 +84,6 @@
   args:
     executable: "/bin/bash"
   when: get_url_result is changed
-  tags: rclone
 
 - name: install bash completion
   environment:
@@ -97,7 +91,6 @@
   command: rclone genautocomplete bash
   changed_when: false
   ignore_errors: true
-  tags: rclone
 
 - name: copy templates
   template:
@@ -108,7 +101,6 @@
     mode: "{{ item.mode | default('0644') }}"
   loop:
     - { dest: "/usr/local/bin/rclonefs", mode: "0755" }
-  tags: rclone
 
 - name: prepare files
   file:
@@ -121,4 +113,3 @@
     - { dest: "/etc/bash_completion.d/rclone" }
     - { dest: "/usr/local/bin/rclone", mode: "0755" }
     - { dest: "/usr/local/bin/rclonefs", mode: "0755" }
-  tags: rclone
