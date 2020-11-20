@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # rclone version.
-rclone_version: "v1.53.2"
+rclone_version: "v1.53.3"
 
 # rclone download details.
 rclone_download: "{{ _rclone_download[rclone_version] }}"
