@@ -13,9 +13,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-# rclone version.
-rclone_version: "v1.53.4"
-
-# rclone download details.
-rclone_download: "{{ _rclone_download[rclone_version] }}"
