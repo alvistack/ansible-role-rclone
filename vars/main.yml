@@ -18,20 +18,20 @@ _rclone_download:
   "v1.54.1":
     url: "http://github.com/ncw/rclone/releases/download/v1.54.1/rclone-v1.54.1-linux-amd64.zip"
     dest: "/var/cache/ansible/c52cbf3646a2d15765b87cf05fc3b2bca3b1d2782d4922046c597bd979e42720/rclone-v1.54.1-linux-amd64.zip"
-    checksum: "sha256:c52cbf3646a2d15765b87cf05fc3b2bca3b1d2782d4922046c597bd979e42720"
+    sha256sum: "c52cbf3646a2d15765b87cf05fc3b2bca3b1d2782d4922046c597bd979e42720"
   "v1.54.0":
     url: "http://github.com/ncw/rclone/releases/download/v1.54.0/rclone-v1.54.0-linux-amd64.zip"
     dest: "/var/cache/ansible/bee31ef4c9cfb1f2bcc3b662c3102cfbe6a551918d2deac6101459557a3fe0b4/rclone-v1.54.0-linux-amd64.zip"
-    checksum: "sha256:bee31ef4c9cfb1f2bcc3b662c3102cfbe6a551918d2deac6101459557a3fe0b4"
+    sha256sum: "bee31ef4c9cfb1f2bcc3b662c3102cfbe6a551918d2deac6101459557a3fe0b4"
   "v1.53.4":
     url: "http://github.com/ncw/rclone/releases/download/v1.53.4/rclone-v1.53.4-linux-amd64.zip"
     dest: "/var/cache/ansible/5fd9abd29b8aa1ab0f195c33f78a476a6221d651b55ad4f913e3559b9904abc6/rclone-v1.53.4-linux-amd64.zip"
-    checksum: "sha256:5fd9abd29b8aa1ab0f195c33f78a476a6221d651b55ad4f913e3559b9904abc6"
+    sha256sum: "5fd9abd29b8aa1ab0f195c33f78a476a6221d651b55ad4f913e3559b9904abc6"
   "v1.53.3":
     url: "http://github.com/ncw/rclone/releases/download/v1.53.3/rclone-v1.53.3-linux-amd64.zip"
     dest: "/var/cache/ansible/c753ad20a4ef82fe48d184e77f8328249897c40c4354da89e98af8a297579c68/rclone-v1.53.3-linux-amd64.zip"
-    checksum: "sha256:c753ad20a4ef82fe48d184e77f8328249897c40c4354da89e98af8a297579c68"
+    sha256sum: "c753ad20a4ef82fe48d184e77f8328249897c40c4354da89e98af8a297579c68"
   "v1.53.2":
     url: "http://github.com/ncw/rclone/releases/download/v1.53.2/rclone-v1.53.2-linux-amd64.zip"
     dest: "/var/cache/ansible/39ac05ea8f316943b573058bbcc06fbedd34edd9861f6d9474b7efff14e157b0/rclone-v1.53.2-linux-amd64.zip"
-    checksum: "sha256:39ac05ea8f316943b573058bbcc06fbedd34edd9861f6d9474b7efff14e157b0"
+    sha256sum: "39ac05ea8f316943b573058bbcc06fbedd34edd9861f6d9474b7efff14e157b0"
