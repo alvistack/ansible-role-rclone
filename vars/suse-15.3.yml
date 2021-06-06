@@ -14,11 +14,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# rclone release.
-rclone_release: "v1.55"
-
-# rclone version.
-rclone_version: "{{ _rclone_version[rclone_release] }}"
-
-# rclone download details.
-rclone_download: "{{ _rclone_download[rclone_version] }}"
+_zypper:
+  - { state: "latest", name: "bash-completion" }
