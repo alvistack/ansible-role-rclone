@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # rclone release.
-rclone_release: "v1.55"
+rclone_release: "1.55"
 
 # rclone version.
 rclone_version: "{{ _rclone_version[rclone_release] }}"
