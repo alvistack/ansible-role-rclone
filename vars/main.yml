@@ -13,21 +13,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-_rclone_version:
-  "1.56": "1.56.0"
-  "1.55": "1.55.1"
-
-_rclone_download:
-  "1.56.0":
-    url: "http://github.com/ncw/rclone/releases/download/v1.56.0/rclone-v1.56.0-linux-amd64.zip"
-    dest: "/var/cache/ansible/d23d0c1f295a7399114b9a07fa987e7dc216dbe989b5d88530eb01d3c87c9c1f/rclone-v1.56.0-linux-amd64.zip"
-    checksum: "d23d0c1f295a7399114b9a07fa987e7dc216dbe989b5d88530eb01d3c87c9c1f"
-  "1.55.1":
-    url: "http://github.com/ncw/rclone/releases/download/v1.55.1/rclone-v1.55.1-linux-amd64.zip"
-    dest: "/var/cache/ansible/d8e28bded459511fc27e300d88c4bee0fda36e7e6222d6d9b9a32e5986163881/rclone-v1.55.1-linux-amd64.zip"
-    checksum: "d8e28bded459511fc27e300d88c4bee0fda36e7e6222d6d9b9a32e5986163881"
-  "1.55.0":
-    url: "http://github.com/ncw/rclone/releases/download/v1.55.0/rclone-v1.55.0-linux-amd64.zip"
-    dest: "/var/cache/ansible/7bf403c3f26cd1d4728905738a501dc137973227c5b64eb9a54f324c96664107/rclone-v1.55.0-linux-amd64.zip"
-    checksum: "7bf403c3f26cd1d4728905738a501dc137973227c5b64eb9a54f324c96664107"
