@@ -19,6 +19,6 @@
   become: true
   tasks:
     - name: rclone version
-      command: rclone version
+      ansible.builtin.command: rclone version
       register: result
       changed_when: result is not succeeded
